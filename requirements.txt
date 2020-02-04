@@ -1,0 +1,5 @@
+tensorflow-gpu
+scipy
+pyyaml
+opencv-python==3.4
+

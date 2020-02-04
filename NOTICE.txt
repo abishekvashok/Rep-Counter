@@ -1,0 +1,15 @@
+RepCounter
+Copyright (c) 2020 Abishek V Ashok
+
+This is fork of PoseNet Python
+PoseNet Python
+Copyright (c) 2018 Ross Wightman
+
+Posenet tfjs converter (code in posenet/converter)
+Copyright (c) 2017 Infocom TPO (https://lab.infocom.co.jp/)
+Modified (c) 2018 Ross Wightman
+
+tfjs PoseNet weights and original JS code
+Copyright 2018 Google LLC. All Rights Reserved.
+
+

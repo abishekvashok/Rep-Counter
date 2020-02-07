@@ -21,7 +21,7 @@ install them in a virtual environment.
   (badgeyay) $ deactivate         			# To deactivate the virtual environment
   $ workon repCounter             			# To activate it again
   (badgeyay) $ pip3 install -r requirements.txt 	# Install the requirements
-
+  ```
   * System Wide Installation
 
     ```sh

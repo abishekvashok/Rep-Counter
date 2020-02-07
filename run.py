@@ -92,7 +92,7 @@ def main():
                 min_pose_score=0.4)
             keypoint_coords *= output_scale # Normalising the output against the resolution
 
-            if(previous_pose == ''): # if previous_pose was not inialised, assign the current keypoints to it
+            if(isinstance(previous_pose, str)): # if previous_pose was not inialised, assign the current keypoints to it
                 previous_pose = keypoint_coords
             
             text, previous_pose, current_state, flag = countRepetition(previous_pose, keypoint_coords, current_state, flag)
@@ -114,8 +114,13 @@ def main():
             image = cv2.putText(image, 'Count: ' + str(count), (10, y+20), cv2.FONT_HERSHEY_SIMPLEX, .5, (255,0,0),2)
             cv2.imshow('RepCounter', image)
 
-            if(cv2.waitKey(1) & 0xFF == ord('q') or cv2.waitKey(1) & 0xFF == ord('Q')):
-                break # Exit on press of q or Q
+            ch = cv2.waitKey(1)
+            if(ch == ord('q') or ch == ord('Q')):
+                break # Exit the loop on press of q or Q
+            elif(ch == ord('r') or ch == ord('R')):
+                count = 0
+        cap.release()
+        cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     main()

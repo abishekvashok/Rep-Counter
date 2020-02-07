@@ -10,7 +10,7 @@ A suitable Python 3.x environment with a recent version of Tensorflow is require
 Development and testing was done with Conda Python 3.6.8 and Tensorflow 1.12.0 on Linux.
 All prerequisitites can be found in the `requirements.txt` file. It is adviced that you
 install them in a virtual environment.
-  * Installation in Virtual Environment
+* Installation in Virtual Environment
 
    It is recommended that you use [`virtualenv`](https://virtualenv.pypa.io/en/stable/installation/)
    and [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/install.html) to maintain
@@ -22,12 +22,12 @@ install them in a virtual environment.
   $ workon repCounter             			# To activate it again
   (badgeyay) $ pip3 install -r requirements.txt 	# Install the requirements
   ```
-  * System Wide Installation
+* System Wide Installation
 
-    ```sh
-    pip3 install -r requirements.txt
-    ```
-    Note: This might change versions of exisiting python packages and hence is *not recommended*.
+  ```sh
+  pip3 install -r requirements.txt
+  ```
+  Note: This might change versions of exisiting python packages and hence is *not recommended*.
 ### Usage
 
 Run the app in eye candy mode with:

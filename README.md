@@ -4,6 +4,12 @@ This repository is a fork of posenet-python(https://github.com/rwightman/posenet
 RepCounter uses posenet to analyse different points and count repetitions. This is highly
 skilled in counting no of reps of exercises.
 
+### Working demos
+
+![Demo1](./demo/demo1.gif)
+![Demo2](./demo/demo2.gif)
+![Demo3](./demo/demo3.gif)
+
 ### Install
 
 A suitable Python 3.x environment with a recent version of Tensorflow is required.
@@ -34,6 +40,7 @@ Run the app in eye candy mode with:
 ```sh
 python3 run.py
 ```
+Usage information: 
 ```sh
 usage: run.py [-h] [--variance VARIANCE] [--model MODEL] [--cam_id CAM_ID]
               [--cam_width CAM_WIDTH] [--cam_height CAM_HEIGHT]
@@ -58,7 +65,11 @@ The first time the apps is run (or the library is used) model weights will be do
 
 The model can be specified with the '--model` argument by using its ordinal id (0-3) or integer depth multiplier (50, 75, 100, 101). The default is the 101 model.
 
+Count can be reset by pressing `r` or `R` on the keyboard.
+Exit the app by pressing the `q` or `Q` on the keyboard.
+
 ### Credits
+
 This repository is a fork of posenet-python (https://github.com/rwightman/posenet-python)
 
 The original model, weights, code, etc. was created by Google and can be found at https://github.com/tensorflow/tfjs-models/tree/master/posenet
